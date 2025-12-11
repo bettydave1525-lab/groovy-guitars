@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Libertinus+Keyboard&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sirivennela&display=swap');
+body{
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body{
+  font-family: 'Archivo+Black&family', Dancing+Script;
+  margin: 0;
+}
+
+/*Website links except the nav */
+a:link{
+  color:#b300b3;
+}
+a:visited{
+  color: #b300b3;
+}
+a:hover{
+  color: blue;
+}
+a:active{
+  color: black;
+}
+header{
+  text-align: center;
+  background: linear-gradient(90deg, rgba(42, 0, 27, 1.000) 0.000%, rgba(120, 19, 12, 1.000) 16.667%, rgba(206, 72, 14, 1.000) 33.333%, rgba(255, 141, 34, 1.000) 50.000%, rgba(255, 213, 67, 1.000) 66.667%, rgba(255, 255, 105, 1.000) 83.333%, rgba(255, 255, 141, 1.000) 100.000%);
+}
+
+/* Navigation */
+nav{
+  background-color: #662900;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 5px;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0;
+}
+nav a{
+  text-decoration: none;
+}
+nav li{
+  display: inline;
+  padding: 5px;
+}
+nav a:link{
+  color: white;
+}
+nav a:visited{
+  color: white;
+}
+nav a:hover{
+  color: gray;
+}
+nav a:active{
+  color: black;
+}
+
+/* Main */
+main{
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/*footer */
+footer{
+  border-top: black 3px solid;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(42, 0, 27, 1.000) 0.000%, rgba(120, 19, 12, 1.000) 16.667%, rgba(206, 72, 14, 1.000) 33.333%, rgba(255, 141, 34, 1.000) 50.000%, rgba(255, 213, 67, 1.000) 66.667%, rgba(255, 255, 105, 1.000) 83.333%, rgba(255, 255, 141, 1.000) 100.000%);
+}
+
+/*css without a media query--applies to all sizes unless overridden*/
+h1{
+  font-size: 3em;
+}
+/* CSS For Tablets */
+@media only screen and (max-width: 1024px){
+  h1{
+    font-size: 2em;
+  }
+}
+
+
+/* CSS For Smartphones */
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 1.5em;
+  }
+}
+
+.logo{
+  max-width: 275px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-hero {
+  background: url("images/guitars.jpg");
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-hero h1{
+  margin: 0;
+  padding: 10px;
+  color: #ffa64d;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  backgrund-color:rgba(0,0,0,.5);
+}
+table{
+  width: 70%;
+  border-collapse: collapse;
+  margin: auto;
+  font-family: arial, sans-serif;
+}
+th{
+  background-color: #662900;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+}
+td{
+  padding: 10px;
+  border: 1px solid #99;
+  font-size: 16px;
+}
+tr:nth-child(even){
+background-color: #f2f2f2;
+}
+tr:nth-child(odd){
+  background-color: #ffffff;
+}
+table, th, td{
+  border: 1px solid #444;
+}
+form{
+  width: 350px;
+  padding: 20px;
+  border: 3px solid #662900;
+  background-color: #f8f8f8;
+}
+input[type=text],
+input[type=email],
+input[type=tel]{
+  background-color: #eeeeee;
+}
+input[type=submit]{
+  background-color: darkred;
+  color: white;
+  display: block;
+}
+input,textarea{
+  margine-bottom:1em;
+  display:block;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+textarea{
+  background-color: #eeeeee;
+}
+lebel{
+  float: left;
+  width: 8em;
+  padding-right: 1em;
+}
+.video-container{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.video-container::after{
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+.video-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.float-right{
+  float: right;
+  max-width: 25%;
+  height: auto;
+  margin-left: 30px;
+  padding: 5px;
+  background-color:#662900;
+}
+h2{
+  background-color: #662900;
+  border-top: 2px black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  list-style-type: none;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0;
+  color: white;
+}
+h1{
+  text-align: center;
+  color:#331a00;
+  font-size: 3em;
+ 
+}
